@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Website U3</title>
+    <link href="Themes/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="menutop">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="maincontent">
+            <div id="rightcontent">
+                <h1>Tiêu đề phải</h1>
+                <div id="ndright">
+                    Nội dung bên phải
+                </div>
+            </div>
+            <div id="content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="ndfooter">
+                Copyright: Lemon
+                Email: lemon@gmail.com
+            </div>
+        </div>
+
+        
+    </div>
+    </form>
+</body>
+</html>
